@@ -397,7 +397,7 @@ aside {
 
   /* Features */
   .feature-items {
-    border: solid green;
+  
   }
   .features article {
     display: flex;
@@ -475,7 +475,48 @@ aside {
 
 /* Desktop Styles */
 @media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    max-width: 960px;
+  }
 
+  /* Header */
+  header {
+    padding: 15px;
+  }
+  /* Hero Area */
+  .hero-area h1 {
+    width: 70%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 34%;
+  }
+
+  /* Features */
+  .features article {
+    flex-basis: 30%;
+    justify-content: space-around;
+  }
+
+  /* Review */
+  .reviews article {
+    width: 45%;
+  }
+  
+  /* ===== ABOUT PAGE ===== */
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  .contact-content div {
+    width: 47%;
+  }
 }
 
 
